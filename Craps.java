@@ -32,6 +32,17 @@ public class Craps
         }
         
         
+        
+        boolean game_on = true;
+        
+        while(game_on){
+           System.out.println("Good Luck");
+           System.out.println("Press <Enter> to roll the dice");
+           String pause = in.nextLine();
+           
+           
+            
+        }
 
         
     }
