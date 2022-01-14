@@ -45,13 +45,14 @@ public class Craps
                 System.out.println("Congratulations! You win!");
                 System.out.println("Play again? (Y/N)");
                 String answer = in.nextLine();
-                if(instructions.equals("Y") || instructions.equals("y") || instructions.equals("yes") || instructions.equals("Yes")){
+                if(answer.equals("Y") || answer.equals("y") || answer.equals("yes") || answer.equals("Yes")){
                     game_on = true;
                 }
                 else{
                     System.out.println("Thank you for playing!  Goodbye!");
                     game_on = false;
                     break;
+                    
 
                 }
 
@@ -61,13 +62,14 @@ public class Craps
                 System.out.println("Sorry, you lose.");
                 System.out.println("Play again? (Y/N)");
                 String answer = in.nextLine();
-                if(instructions.equals("Y") || instructions.equals("y") || instructions.equals("yes") || instructions.equals("Yes")){
+                if(answer.equals("Y") || answer.equals("y") || answer.equals("yes") || instructions.equals("Yes")){
                     game_on = true;
                 }
                 else{
                     System.out.println("Thank you for playing!  Goodbye!");
                     game_on = false;
                     break;
+                    
 
                 }
 
@@ -83,17 +85,27 @@ public class Craps
                     int num2 = d.roll();
 
                     if(num2 == 7){
-                        roll = false;
+                        
+                        
                         System.out.println("Sorry, you lose.  You rolled a 7.");
                         System.out.println("Play again? (Y/N)");
                         String answer = in.nextLine();
-                        if(instructions.equals("Y") || instructions.equals("y") || instructions.equals("yes") || instructions.equals("Yes")){
+                        roll = false;
+                        
+                        
+                        
+                        if(answer.equals("Y") || answer.equals("y") || answer.equals("yes") || answer.equals("Yes")){
                             game_on = true;
+                            roll = false;
+                            break;
+                        
+                        
                         }
                         else{
                             System.out.println("Thank you for playing!  Goodbye!");
                             game_on = false;
                             break;
+                            
                             
 
                         }
@@ -101,11 +113,13 @@ public class Craps
 
                     else if(num2 == num1){
                         roll = false;
-                        System.out.println("Congratulations! You win!");
+                        System.out.println("Congratulations! You rolled " + num2 +". You win!");
                         System.out.println("Play again? (Y/N)");
                         String answer = in.nextLine();
-                        if(instructions.equals("Y") || instructions.equals("y") || instructions.equals("yes") || instructions.equals("Yes")){
+                        if(answer.equals("Y") || answer.equals("y") || answer.equals("yes") || answer.equals("Yes")){
                             game_on = true;
+                            roll = false;
+                            break;
                         }
                         else{
                             System.out.println("Thank you for playing!  Goodbye!");
