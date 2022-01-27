@@ -143,3 +143,39 @@ public class Craps
 
     }
 }
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+This is a great version of the Craps game, Kaylin! You correctly implemented the 
+rules of the game in your code, and the communication regarding how the game
+was progressing as they kept rolling felt just right.
+
+Several things you can do to improve the project here:
+
+1. Include your name and version/date in the JavaDocs at the beginning of the program!
+   I had to check the git log to find out whose code this was. :)
+
+2. You have four separate sections of your code where you ask the user if they
+   want to play again. By reorganizing your code, you can just have a single section
+   at the end of the game where you ask that one time. It makes your code easier
+   to maintain, too, when you only have to fix one thing, as I'm about to suggest
+   you do.
+
+3. The handout suggested you implement a "default Yes/No" feature for questions
+   where the user wants to play again, and shows you how to do that. That's a
+   useful thing to include for future projects, so you should take a look at that
+   and see how it works.
+
+I'm going to finish this comment and commit the message, then do a follow-up commit
+with a new version of your program so you can see how to implement items 2 and 3
+there.
+
+Otherwise, really nice work, Kaylin! We're going to have fun on our remaining 
+projects this year!
+
+SCORE: 47/50
+
+*/
+
